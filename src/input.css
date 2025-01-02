@@ -18,37 +18,16 @@
 .new_font{
     font-family: "boldyekan";
 }
-
-.boxshadow{
-    box-shadow: 0px 16px 60px -10px #9355ff;
-    /* position: relative;
-    top: 0px;
-    bottom: 7px; */
-}
-/* .hidden{
-    width: 0px;
-    overflow: hidden;
-    transition: all 1s ease;
-}
-.open{
-    width: 400px;
-    height: 200px;
-    overflow: visible;
-    transition: all 1s ease;
-} */
 .modal {
     position: fixed;
     top: 0;
     right: 0px;
     background-color: transparent; /* پس‌زمینه شفاف */
     backdrop-filter: blur(2px);
-    transition: all 1s ease;
-
 }
 @media (max-width: 768px) {
     .modal-content {
         width: 80%;
-        transition: all 1s ease;
     }
 }
 .modal-content {
@@ -57,18 +36,6 @@
     border-radius: 5px;
     height: 100%;
     width: 230px;
-    transition: all 1s ease;
-}
-
-
-
-
-.trz{
-    transition: all 1s ease;
- }
-.test{
-    /* background-color: #6528f7; */
-    margin-left: 40px;
 }
 .svgshapes{
     position: relative;
@@ -78,10 +45,18 @@
     z-index: 1;
 }
 .react-multi-carousel-list{
-    padding-left: 70px;
+    padding-left: 105px;
+    padding-bottom: 50px;
+
+    @media (max-width: 640px) {
+        padding-left: 15px;
+    }
 }
-.react-multi-carousel-item{
-    width: 300px;
+.react-multi-carousel-dot--active:only-child{
+    width: 50px;
+    background-color: #9355ff;
+    border-radius: 20px;
+   
 }
 .bg-image {
     background-image: url("./image/rb_3835.svg");
@@ -89,21 +64,31 @@
     background-size: 640px;
     background-position-y: -100px;
 
-    /* برای صفحه‌های بزرگتر از 800 پیکسل */
     @media (min-width: 801px) {
         background-position: right;
     }
-
-    /* برای صفحه‌های کوچکتر یا مساوی 800 پیکسل */
- 
     @media (max-width: 1024px) {
         background-position: center;
         background-size: 770px;
         background-position-y: -100px;
-
     }
     @media (max-width: 640px) {
         background-position: center;
         background-size: 425px !important;
     }
+}
+.bg-image-footer{
+    background-image: url("./image/footerimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test-shadow{
+
+    text-shadow:
+    2px 2px 0px rgb(106, 0, 155),
+    -2px -2px 0px rgb(106, 0, 155),
+    2px -2px 0px rgb(106, 0, 155),
+    -2px 2px 0px rgb(106, 0, 155),
+    0px 2px 0px rgb(106, 0, 155);
 }

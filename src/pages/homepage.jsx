@@ -47,7 +47,7 @@ function Homepage() {
             </div>
             <div className="flex w-full pb-12 items-center justify-around h-auto mr-32 mt-32 max-sm:mt-10 max-lg:mt-16 max-lg:flex-col pr-9 bg-image max-sm:flex-col max-sm:mr-0 max-sm:items-center max-sm:justify-around max-sm:w-full max-xl:mr-0">
                 <div className="w-1/2 max-sm:w-full h-96 flex flex-col items-start justify-around">
-                    <h2 className="new_font max-lg:text-3xl max-lg:mt-28 text-3xl mr-24 mt-12 text-white max-sm:text-2xl max-sm:mr-0 max-sm:mt-32"> <span className="text-black"> با  VPN اکسیژن</span> <span>آسان باشید</span> </h2>
+                    <h2 className="new_font max-lg:text-3xl max-lg:mt-28 text-3xl mr-28 mt-28 text-white max-sm:text-2xl max-sm:mr-0 max-sm:mt-32"> <span className="text-purple-300 test-shadow"> با  VPN اکسیژن</span> <span>آسان باشید</span> </h2>
                     <p className="font-yekan2mt-7 mr-24  text-white font-yekan leading-10 max-sm:mr-0 max-sm:text-sm max-sm:leading-9">با استفاده از اکسیژن شبکه ای را برای تمام نیازهای <br /> خود با سهولت و سرگرمی فراهم کنید، ویژگی های <br /> جالبی را از ما کشف کنید.</p>
                     <a className="pl-28 max-lg:items-center max-sm:mr-0 max-sm:pl-16 max-sm:pr-16 max-lg:pr-14 max-lg:pl-14 pr-28 pt-4 mr-24  pb-4 boxshadow rounded-3xl bg-gradient-to-r from-white to-violet-400 text-violet-800	 new_font testserver mt-10 max-sm:text-base text-xl" href="#">دریافت سرور تستی</a>
                 </div>
@@ -71,7 +71,7 @@ function Homepage() {
                     <span className="font-yekan text-2xl max-sm:text-lg mt-7">2.بیش از 100 سرور پرسرعت از 30 کشور متفاوت</span>
                     <span className="font-yekan text-2xl max-sm:text-lg mt-7">3. اتصال خودکار به بهترین سرور</span>
                     <span className="font-yekan text-2xl max-sm:text-lg mt-7">4. مخصوص کاربران اندروید</span>
-                    <a className="pl-28 pr-28 pt-4 pb-4 rounded-3xl bg-blue-500 text-white new_font testserver mt-10 text-xl" href="#">پشتیبانی تلگرام</a>
+                    <a className="pl-10 flex items-center justify-center pr-10 pt-4 pb-4 rounded-3xl bg-blue-500 text-white new_font testserver mt-10 text-xl" href="#">پشتیبانی تلگرام</a>
                 </div>
                 <div className="w-1/2  max-sm:w-full max-sm:items-center max-sm:mt-10 flex flex-col items-start">
                     <img src={vipimage} width={"80%"} alt="" />
@@ -92,14 +92,14 @@ function Homepage() {
                     <span className="font-yekan text-2xl max-sm:text-base mt-7">2. امکان اتصال با چندید دستگاه به صورت همزمان</span>
                     <span className="font-yekan text-2xl max-sm:text-base mt-7">3.کانفیگ اختصاصی بدون قطعی و افت سرعت</span>
                     <span className="font-yekan text-2xl max-sm:text-base mt-7">4. متناسب برای کاربران آیفون، ویندوز و اندروید</span>
-                    <a className="pl-28 pr-28 max-sm:text-lg max-sm:pl-16 max-sm:pr-16 pt-4 pb-4 rounded-3xl bg-blue-500 text-white new_font testserver mt-10 text-xl" href="#">جهت تمیدید خودکار کلیک کنید</a>
+                    <a className="pl-10 flex items-center justify-center pr-10 max-sm:text-lg max-sm:pl-16 max-sm:pr-16 pt-4 pb-4 rounded-3xl bg-blue-500 text-white new_font testserver mt-10 text-xl" href="#">جهت تمیدید خودکار کلیک کنید</a>
                 </div>
                 <div className="w-1/2 max-sm:w-full flex flex-col items-start max-sm:mt-12">
                     <img src={proudactwhy} width={"80%"} alt="" />
                 </div>
             </div>
             <div ref={section3Ref} id="purchase-section">
-                <a><Footer/></a>
+                <Footer/>
             </div>
         </div>
 
