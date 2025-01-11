@@ -20,14 +20,18 @@ export default function Slider() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
+      items: 3,
+    },
+    tablet3: {
+      breakpoint: { max: 950, min: 650 },
       items: 2,
     },
     tablet2: {
       breakpoint: { max: 650, min: 0 },
-      items: 1,
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 590, min: 0 },
       items: 1,
     },
   };
@@ -75,7 +79,7 @@ export default function Slider() {
         {VipProudact.map((product, index) => (
           <div
             key={index}
-            className="w-72 max-md:w-53 p-3 max-sm:ml-32 h-auto flex flex-col items-center bg-violet-100 rounded-3xl test"
+            className="w-72 max-md:w-53 p-3 max-md:-ml-11 max-sm:-ml-8 h-auto flex flex-col items-center bg-violet-100 rounded-3xl test"
           >
             <img src={proudactimage} className="w-1/2 mt-3" alt="" />
             <span className="mt-6 new_font text-black ">{product.time}</span>

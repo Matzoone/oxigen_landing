@@ -2,34 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+@font-face {
     font-family: "boldyekan";
     src: url('./font/OTF/YekanBakh-Bold.otf');
 }
-@font-face{
+
+@font-face {
     font-family: "yekanlight";
     src: url('./font/OTF/YekanBakh-Light.otf');
 }
 
-.font-yekan{
+.font-yekan {
     font-family: "yekanlight";
 }
 
-.new_font{
+.new_font {
     font-family: "boldyekan";
 }
+
 .modal {
     position: fixed;
     top: 0;
     right: 0px;
-    background-color: transparent; /* پس‌زمینه شفاف */
+    background-color: transparent;
+    /* پس‌زمینه شفاف */
     backdrop-filter: blur(2px);
 }
+
 @media (max-width: 768px) {
     .modal-content {
         width: 80%;
     }
 }
+
 .modal-content {
     position: relative;
     padding: 20px;
@@ -37,27 +42,53 @@
     height: 100%;
     width: 230px;
 }
-.svgshapes{
+
+.svgshapes {
     position: relative;
     bottom: 20px;
     top: -600px;
-    right: -0px;  
+    right: -0px;
     z-index: 1;
 }
-.react-multi-carousel-list{
+
+.react-multi-carousel-list {
     padding-left: 105px;
     padding-bottom: 50px;
 
-    @media (max-width: 640px) {
-        padding-left: 15px;
+}
+@media (max-width:1200px) {
+
+    .react-multi-carousel-list{
+        padding-left: 55px;
     }
 }
-.react-multi-carousel-dot--active:only-child{
+@media (max-width:1024px) {
+
+    .react-multi-carousel-list{
+        padding-left: 30px;
+    }
+}
+
+@media (max-width:850px) {
+
+    .react-multi-carousel-list{
+        padding-left: 70px;
+    }
+}
+@media (max-width:640px) {
+
+    .react-multi-carousel-list{
+        padding-right: 10px;
+    }
+}
+
+.react-multi-carousel-dot--active:only-child {
     width: 50px;
     background-color: #9355ff;
     border-radius: 20px;
-   
+
 }
+
 .bg-image {
     background-image: url("./image/rb_3835.svg");
     background-repeat: no-repeat;
@@ -67,28 +98,31 @@
     @media (min-width: 801px) {
         background-position: right;
     }
+
     @media (max-width: 1024px) {
         background-position: center;
         background-size: 770px;
         background-position-y: -100px;
     }
+
     @media (max-width: 640px) {
         background-position: center;
         background-size: 425px !important;
     }
 }
-.bg-image-footer{
+
+.bg-image-footer {
     background-image: url("./image/footerimage.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.test-shadow{
+.test-shadow {
 
     text-shadow:
-    2px 2px 0px rgb(106, 0, 155),
-    -2px -2px 0px rgb(106, 0, 155),
-    2px -2px 0px rgb(106, 0, 155),
-    -2px 2px 0px rgb(106, 0, 155),
-    0px 2px 0px rgb(106, 0, 155);
+        2px 2px 0px rgb(106, 0, 155),
+        -2px -2px 0px rgb(106, 0, 155),
+        2px -2px 0px rgb(106, 0, 155),
+        -2px 2px 0px rgb(106, 0, 155),
+        0px 2px 0px rgb(106, 0, 155);
 }
