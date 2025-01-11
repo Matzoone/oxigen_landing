@@ -27,7 +27,7 @@ const ProductPage = () => {
             <div className="text-4xl font-bold text-white">
               همین حالا VPN خودتو بگیر!
             </div>
-            <div className="text-white mt-8 text-base font-normal max-md:mb-4">
+            <div className="text-white mt-8 text-base font-normal max-md:mb-4 max-lg:text-xs">
               دیگه نگران محدودیت‌های اینترنت نباش! با وی‌پی‌ان سریع و امن ما
               می‌تونی به راحتی به هر چیزی که می‌خواهی دسترسی پیدا کنی، بدون هیچ
               دردسری. امنیت آنلاین‌ت هم با ما تضمینه، پس با خیال راحت وب‌گردی
@@ -61,13 +61,13 @@ const ProductPage = () => {
                 type="email"
                 id="email"
                 placeholder="exaple@gmail.com"
-                className="px-4 py-2 transition rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-500 text-gray-700 w-64"
+                className="px-4 py-2 max-lg:w-full transition rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-500 text-gray-700 w-64"
               />
             </div>
             <div className="mt-14 text-sm text-slate-100 bg-green-500 py-3 rounded-2xl flex items-center justify-center md:hidden">
               پشتیبانی 24 ساعته
             </div>
-            <div className="mt-[70px] text-sm text-slate-600 justify-center max-md:hidden mr-4">
+            <div className="mt-[70px] text-sm max-lg:hidden text-slate-600 justify-center max-sm:hidden mr-4">
               <ul className="list-disc flex gap-8">
                 <li>sghl</li>
                 <li>o,fd</li>

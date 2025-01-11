@@ -74,7 +74,7 @@ export default function SliderVolume() {
         <>
           <Carousel showDots={true}  responsive={responsive}>
             {VipProudact.map((product, index) => (
-              <div key={index} className="w-72 h-auto max-sm:ml-12 flex flex-col items-center bg-violet-100 rounded-3xl test">
+              <div key={index} className="w-72 h-auto max-sm:ml-7 flex flex-col items-center bg-violet-100 rounded-3xl test">
                 <img src={proudactimage} className="w-1/2 mt-3" alt="" />
                 <span key={`${index}-time`} className="mt-6 new_font text-black ">{product.time}</span>
                 <span key={`${index}-volume`} className="mt-6 font-yekan text-black">{product.Volume}</span>
