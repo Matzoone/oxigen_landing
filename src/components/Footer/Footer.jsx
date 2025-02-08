@@ -11,15 +11,19 @@ const Footer = () => {
     <footer className="bg-black text-gray-400 py-10 px-6 md:px-12 rtl mt-60">
       <div className="container mx-auto flex flex-col md:flex-row-reverse justify-between items-center">
         {/* سمت راست: لوگو و اطلاعات */}
-        <img src="../../../public/imgs/icon.png" alt="OX" className="w-1/5" />
+        <img
+          src="../../../public/imgs/icon.png"
+          alt="OX"
+          className="w-1/5 max-md:mb-5"
+        />
         {/* ایمیل */}
         <div className="flex items-center text-sm">
           <EnvelopeIcon className="w-5 h-5 text-gray-400 ml-2" />
           support@ignfa.com
         </div>
         {/* سمت چپ: متن و شبکه‌های اجتماعی */}
-        <div className="text-left max-w-[400px] text-right">
-          <h3 className="text-lg font-bold text-white flex items-center gap-2">
+        <div className="max-w-[400px] text-right">
+          <h3 className="text-lg font-bold text-white flex items-center gap-2 max-md:my-5">
             <span className="text-xl mr-1">
               <img src="../../../public/imgs/icon.png" alt="OX" />
             </span>
