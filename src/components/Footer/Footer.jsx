@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row-reverse justify-between items-center">
         {/* سمت راست: لوگو و اطلاعات */}
         <img
-          src="../../../public/imgs/icon.png"
+          src="../../../public/imgs/logo.png"
           alt="OX"
           className="w-1/5 max-md:mb-5"
         />

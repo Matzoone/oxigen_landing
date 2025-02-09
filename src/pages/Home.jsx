@@ -19,10 +19,6 @@ const Home = () => {
         <div>
           <Apps />
         </div>
-        {/* whyOx */}
-        <div>
-          <WhyOx />
-        </div>
         {/* config */}
         <div>
           <Config />
@@ -31,6 +27,10 @@ const Home = () => {
       {/* apssBox */}
       <div>
         <AppBox />
+      </div>
+      {/* whyOx */}
+      <div>
+        <WhyOx />
       </div>
       {/* OxTeam */}
       <div>
