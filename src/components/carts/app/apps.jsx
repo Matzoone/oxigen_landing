@@ -1,4 +1,5 @@
 import CardContent from "../cartContent";
+import { ScrollButtonsWithCircle } from "../filter";
 import AboutApps from "./aboutApps";
 
 const propss = [
@@ -32,6 +33,12 @@ const Apps = () => {
   return (
     <div>
       <AboutApps />
+      <div className="flex flex-col items-center my-28">
+        <h1 className="text-3xl max-md:text-2xl w-[calc(100% - 1rem)]">
+          پلن‌های پیشنهادی ما برای شما
+        </h1>
+        <ScrollButtonsWithCircle />
+      </div>
       <CardContent porps={propss} />
     </div>
   );
