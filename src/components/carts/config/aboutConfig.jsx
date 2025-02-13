@@ -2,7 +2,7 @@ const AboutConfig = () => {
   return (
     <div>
       <div className="flex items-center w-[65%] flex-col m-auto gap-8">
-        <h1 className="text-2xl font-bold">
+        <h1 className="text-2xl font-bold mt-20">
           سرویس اپ حجمی برای ایفون و اندروید اکسیژن
         </h1>
         <p className="text-gray-500 w-3/4 max-md:text-center">

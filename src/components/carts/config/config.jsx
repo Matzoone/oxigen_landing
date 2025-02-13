@@ -27,6 +27,38 @@ const propss = [
     off: false,
     id: 2,
   },
+  {
+    time: "سه ماهه",
+    discount: 200000,
+    price: 1000,
+    props: "props",
+    off: false,
+    id: 3,
+  },
+  {
+    time: "سه ماهه",
+    discount: 200000,
+    price: 1000,
+    props: "props",
+    off: false,
+    id: 4,
+  },
+  {
+    time: "سه ماهه",
+    discount: 200000,
+    price: 1000,
+    props: "props",
+    off: true,
+    id: 5,
+  },
+  {
+    time: "سه ماهه",
+    discount: 200000,
+    price: 1000,
+    props: "props",
+    off: false,
+    id: 6,
+  },
 ];
 
 const Config = () => {
