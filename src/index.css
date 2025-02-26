@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Vazir";
-  src: url("/public/fonts/Vazir.woff2") format("woff2"),
-    url("/public/fonts/Vazir.woff") format("woff");
+  font-family: "Estedad"; /* تغییر به Estedad */
+  src: url("/public/fonts/ttf/Estedad-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+/* استفاده از فونت استعداد */
 body {
-  font-family: "Vazir", sans-serif;
+  font-family: "Estedad", sans-serif;
 }
 
+/* تغییرات استایل‌های swiper */
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: #ccc !important; /* پس‌زمینه طوسی */
+  width: 3rem !important;
+  background-color: #cccccc57 !important; /* پس‌زمینه طوسی */
   border-radius: 50% !important; /* دایره‌ای کردن دکمه‌ها */
   width: 40px !important; /* عرض دکمه */
   height: 40px !important; /* ارتفاع دکمه */
@@ -29,12 +31,41 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: white !important; /* رنگ آیکون داخل دکمه */
+  color: rgba(0, 0, 0, 0.664) !important; /* رنگ آیکون داخل دکمه */
   font-size: 20px !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: #aaa !important; /* رنگ طوسی تیره‌تر هنگام هاور */
+  background-color: #aaaaaa6e !important; /* رنگ طوسی تیره‌تر هنگام هاور */
   transform: scale(1.1); /* بزرگ‌تر شدن دکمه هنگام هاور */
 }
+
+.swiper-pagination {
+  position: absolute !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: red !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  height: 45.5rem !important;
+}
+
+.swiper-init50lized {
+  height: 4
+}
+/* @media (min-width: 1024px) {
+  .wwww {
+    height: 90% !important;
+  }
+}
+
+@media (max-width: 765px) {
+  .wwww {
+    height: 90% !important;
+  }
+} */

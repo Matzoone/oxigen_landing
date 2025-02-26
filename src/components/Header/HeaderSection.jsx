@@ -21,7 +21,10 @@ const HeroSection = () => {
           <button className="bg-red-500 hover:bg-red-600 text-white px-8 transition hover:scale-110 py-1 rounded-3xl font-medium">
             خرید سرور
           </button>
-          <button className="border border-gray-400 text-white px-8 transition hover:scale-110 py-1 rounded-3xl font-medium hover:bg-gray-700 max-md:p-7 max-md:py-1 max-md:!m-0">
+          <button
+            href="https://web.telegram.org/a/#7258672985"
+            className="border border-gray-400 text-white px-8 transition hover:scale-110 py-1 rounded-3xl font-medium hover:bg-gray-700 max-md:p-7 max-md:py-1 max-md:!m-0"
+          >
             تست رایگان
           </button>
         </div>

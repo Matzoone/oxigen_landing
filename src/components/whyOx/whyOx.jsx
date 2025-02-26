@@ -33,13 +33,13 @@ const WhyOx = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 flex flex-col items-center space-y-4 relative overflow-hidden w-3/4 m-auto"
+            className="bg-[#FAFAFA] shadow-lg rounded-xl p-6 border border-gray-200 flex flex-col items-center space-y-4 relative overflow-hidden w-3/4 m-auto"
           >
             {/* تصویر گوشه کارت */}
             <div
               className="absolute top-[-30%] right-[-25%] bg-cover bg-no-repeat bg-center w-32 h-32"
               style={{
-                backgroundImage: "url('../../../public/imgs/planet2.png')",
+                backgroundImage: "url('../imgs/planet2.png')",
               }}
             ></div>
 
