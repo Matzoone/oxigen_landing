@@ -37,7 +37,7 @@ const Config = () => {
                 setFilter={setFilter}
                 />
             </div>
-            <CardContent plans={result} />
+            <CardContent plans={result} v2ray={true} />
         </div>
     );
 };

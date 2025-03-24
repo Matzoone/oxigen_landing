@@ -5,14 +5,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const Plan = ({ plan }) => {
+const Plan = ({ plan , v2ray=false }) => {
 
     const planBuyHandler = () => {
         window.location.href = 
         "https://seepay.site/seeads/payment/checkout.php?source=seeads&service_id=" + plan.id
     }
 
-    const features = [
+    let features = [
         "حجم نامحدود",
         "بیش از 12 سرور پر سرعت",
         "پشتیبانی 24 ساعته",
@@ -20,15 +20,28 @@ const Plan = ({ plan }) => {
         "اشتراک آی‌پی ثابت",
         "ضمانت بازگشت وجه"
     ]
+
+    if (v2ray) {
+        features = features.filter((item) => item != "حجم نامحدود")
+    }
     return (
         <div className="bg-[#FFF0F0] rounded-3xl p-8 flex flex-col
          h-fit shadow-lg w-80 border border-gray-400 ">
             <div className="text-center">
-                <h3 className="text-2xl text-red-700 font-semibold mb-10">{plan.title_fa}</h3>
-                <p className="text-gray-800 font-semibold mb-5">{plan.subtitle}</p>
+                <h3 className="text-2xl text-red-700 font-semibold mb-10">
+                    {
+                        v2ray ?
+                        plan.size + " گیگ " + plan.duration / 30 + " ماهه" : 
+                        plan.title_fa
+                    }
+                </h3>
+                {/* <p className="text-gray-800 font-semibold mb-5">{plan.subtitle}</p> */}
                 <div className="flex flex-col items-center mb-6">
-                    <span className="text-gray-600 line-through text-sm mb-1 mt-2">
+                    {
+                        plan.original_price && 
+                        <span className="text-gray-600 line-through text-sm mb-1 mt-2">
                         {plan.original_price} تومان</span>
+                    }
                     <span className="text-4xl font-bold mt-8">{plan.cost.toLocaleString()} تومان</span>
                 </div>
             </div>
@@ -59,7 +72,7 @@ const Plan = ({ plan }) => {
     )
 };
 
-const CardContent = ( { plans } ) => {
+const CardContent = ( { plans , v2ray=false } ) => {
 
     const [result,setResult] = useState([]);
 
@@ -85,14 +98,14 @@ const CardContent = ( { plans } ) => {
                         spaceBetween: 20,
                     },
                     1280: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                         spaceBetween: 20,
                     },
                 }}
             >
                 {result.map((plan, index) => (
                     <SwiperSlide key={index} className="mb-20">
-                        <Plan plan={plan} />
+                        <Plan plan={plan} v2ray={v2ray}  />
                     </SwiperSlide>
                 ))}
             </Swiper>
