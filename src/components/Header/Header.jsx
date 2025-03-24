@@ -40,10 +40,10 @@ const Header = ({ onBuyClick }) => {
               تست رایگان
             </button>
             <button
-              onClick={onBuyClick}
+              onClick={() => (window.location.href = "https://t.me/oxigen_sup")}
               className="bg-gradient-to-r px-10 py-2 rounded-3xl font-semibold transition hover:scale-110 max-md:px-4 max-md:py-2 max-md:text-xs bg-red-500" style={{background: "#FF4D4D"}}
             >
-              خرید سرور
+              ارتباط با پشتیبانی
             </button>
           </div>
         </div>

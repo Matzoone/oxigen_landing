@@ -1,65 +1,45 @@
-import CardContent from "../cartContentV2";
+import CardContent from "../cartContentApp";
 import { ScrollButtonsWithCircle } from "../filter";
 import AboutConfig from "./aboutConfig";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Config = () => {
-  const [services, setServices] = useState([]);
-  const [filteredServices, setFilteredServices] = useState([]);
 
-  useEffect(() => {
-    const fetchServices = async () => {
-      try {
-        const response = await fetch(
-          "https://api.parazitapp.fun/getServices?type=v2ray"
-        );
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+    const [plans,setPlans] = useState();
+    const [currentFilter,setFilter] = useState("all");
+    const [result,setResult] = useState([]);
 
-        const data = await response.json();
+    useEffect(() => {
+        (async () => {
+            await axios.get("https://oxigenplatform.site/proxy.php?method=getServices&type=v2ray").then(
+                (response) => setPlans(response.data)
+            ).catch((error) => console.log(error))
+        })();
+    },[]);
 
-        if (!Array.isArray(data)) {
-          return;
-        }
+    useEffect(() => {
+        currentFilter === "all" ? 
+        setResult(plans) : 
+        setResult(plans.filter((item) => item.duration === currentFilter));
+    },[currentFilter,plans]);
 
-        const formattedServices = data.map((service) => ({
-          time: service.title_fa.split("-")[0].trim(),
-          discount: parseInt(service.original_price),
-          price: parseInt(service.cost),
-          duration: service.duration,
-          props: "props",
-          off: parseInt(service.original_price) > parseInt(service.cost),
-          id: service.id,
-        }));
 
-        setServices(formattedServices);
-        setFilteredServices(formattedServices);
-      } catch (error) {
-        console.error("Error fetching services:", error);
-        setServices([]);
-        setFilteredServices([]);
-      }
-    };
-
-    fetchServices();
-  }, []);
-
-  return (
-    <div>
-      <AboutConfig />
-      <div className="flex flex-col items-center my-8 max-md:mb-8">
-        <h1 className="text-3xl max-md:text-2xl w-[calc(100% - 1rem)]">
-          پلن‌های پیشنهادی ما برای شما
-        </h1>
-        <ScrollButtonsWithCircle
-          products={services}
-          onFilterChange={(filtered) => setFilteredServices(filtered)}
-        />
-      </div>
-      <CardContent props={filteredServices} />
-    </div>
-  );
+    return (
+        <div>
+            <AboutConfig />
+            <div className="flex flex-col items-center my-8 max-md:mb-8">
+                <h1 className="text-3xl max-md:text-2xl w-[calc(100% - 1rem)]">
+                    پلن‌های پیشنهادی ما برای شما
+                </h1>
+                <ScrollButtonsWithCircle
+                currentFilter={currentFilter}
+                setFilter={setFilter}
+                />
+            </div>
+            <CardContent plans={result} />
+        </div>
+    );
 };
 
 export default Config;
