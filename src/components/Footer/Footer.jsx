@@ -32,16 +32,10 @@ const Footer = () => {
           </p>
           <div className="flex justify-start space-x-4 space-x-reverse mt-4 text-gray-300">
             <a
-              href="https://t.me/oxigenvpn"
+              href="https://t.me/oxigen_sup"
               className="hover:text-white text-xl"
             >
               <FaTelegram />
-            </a>
-            <a
-              href="https://www.instagram.com/oxigen_vpn"
-              className="hover:text-white text-xl"
-            >
-              <FaInstagram />
             </a>
             {/* <a href="#" className="hover:text-white text-xl">
               <FaTwitter />

@@ -1,16 +1,16 @@
 const Header = ({ onBuyClick }) => {
     return (
-        <div className="relative w-full">
-            <div className="relative w-full h-0 pb-[40%] max-md:pb-[75%]">
+        <div className="relative w-full h-screen">
+            <div className="relative w-full h-full bg-slate-900">
                 <div className="flex justify-center gap-2 z-50 absolute top-4 right-20">
                     <img src="../imgs/logo1.png" className="w-10" alt="Oxygen" />
                     <span className="bg-gradient-to-r from-red-500 to-white text-transparent bg-clip-text text-2xl font-bold">اکسیژن</span>
                 </div>
-                <img
+                {/* <img
                     src="../imgs/baner1.png"
                     className="max-md:block hidden absolute top-0 left-0 w-full h-auto object-cover object-top"
                     alt="Mobile Banner"
-                />
+                /> */}
                 <img
                     src="../imgs/Banner.png"
                     className="md:block hidden absolute top-0 left-0 w-full h-full object-cover"
