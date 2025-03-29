@@ -66,7 +66,7 @@ const Plan = ({ plan , v2ray=false }) => {
             bg-red-500 text-white py-4 rounded-xl hover:bg-red-600 transition-colors font-bold text-lg"
             onClick={() => planBuyHandler()}>
                 <img src="../imgs/coffee.png" alt="coffee icone" />
-                بخریم !
+               خرید فوری از درگاه
             </button>
         </div>
     )

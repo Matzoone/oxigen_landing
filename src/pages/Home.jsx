@@ -6,7 +6,6 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import OxTeam from "../components/OxTeam/OxTeam";
 import WhyOx from "../components/whyOx/whyOx";
-import Garanty from "../components/Granty/Granty";
 
 const Home = () => {
   const appsRef = useRef(null);
@@ -24,11 +23,8 @@ const Home = () => {
         <Header onBuyClick={handleScrollToApps} />
       </div>
       {/* garanty */}
-      <div>
-        <Garanty />
-      </div>
       {/* cards */}
-      <div className="mt-20">
+      <div >
         {/* apps */}
         <div ref={appsRef}>
           <Apps />

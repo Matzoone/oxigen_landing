@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Estedad"; /* تغییر به Estedad */
+  font-family: "Estedad";
+  /* تغییر به Estedad */
   src: url("/public/fonts/ttf/Estedad-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -18,27 +19,36 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   width: 3rem !important;
-  background-color: #cccccc57 !important; /* پس‌زمینه طوسی */
-  border-radius: 50% !important; /* دایره‌ای کردن دکمه‌ها */
-  width: 40px !important; /* عرض دکمه */
-  height: 40px !important; /* ارتفاع دکمه */
+  background-color: #cccccc57 !important;
+  /* پس‌زمینه طوسی */
+  border-radius: 50% !important;
+  /* دایره‌ای کردن دکمه‌ها */
+  width: 40px !important;
+  /* عرض دکمه */
+  height: 40px !important;
+  /* ارتفاع دکمه */
   display: flex !important;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.61) !important; /* سایه ملایم */
-  transition: all 0.3s ease-in-out; /* انیمیشن */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.61) !important;
+  /* سایه ملایم */
+  transition: all 0.3s ease-in-out;
+  /* انیمیشن */
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: rgba(0, 0, 0, 0.664) !important; /* رنگ آیکون داخل دکمه */
+  color: rgba(0, 0, 0, 0.664) !important;
+  /* رنگ آیکون داخل دکمه */
   font-size: 20px !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: #aaaaaa6e !important; /* رنگ طوسی تیره‌تر هنگام هاور */
-  transform: scale(1.1); /* بزرگ‌تر شدن دکمه هنگام هاور */
+  background-color: #aaaaaa6e !important;
+  /* رنگ طوسی تیره‌تر هنگام هاور */
+  transform: scale(1.1);
+  /* بزرگ‌تر شدن دکمه هنگام هاور */
 }
 
 .swiper-pagination {
@@ -58,6 +68,7 @@ body {
 .swiper-init50lized {
   height: 4
 }
+
 /* @media (min-width: 1024px) {
   .wwww {
     height: 90% !important;
@@ -69,3 +80,24 @@ body {
     height: 90% !important;
   }
 } */
+
+
+@media only screen and (min-width : 756px) {
+  .bg {
+    background-image: url("../public/imgs/Banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width : 756px) {
+  .bg {
+    background-image: url("../public/imgs/baner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+  }
+}
